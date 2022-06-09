@@ -49,7 +49,11 @@ const Coin = () =>{
                         </div>
                     
                 </div>
+<div className="right-chart" >
                 <ChartWidget />
+
+</div>
+
             </div>
         </div>
     )

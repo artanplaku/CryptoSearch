@@ -1,8 +1,14 @@
+* {
+    text-align: center;
+    /* margin: auto !important; */
+}
+
 
 .container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-evenly;
+    align-items: center; */
+    margin: auto !important
 }
 
 .heading {
@@ -37,4 +43,9 @@
 }
 .about{
     color:aliceblue
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }

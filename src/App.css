@@ -1,6 +1,9 @@
 .App {
-  
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
+  margin: 0 auto;
+  width: 100%;
   
 }
 
@@ -13,3 +16,26 @@
   position: sticky;
   top: 20px; */
 
+  .test {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  /* border: white 2px solid; */
+  }
+
+  .rightSide {
+  display: flex;
+  justify-content: center;
+  border: white 2px solid;
+
+  flex-direction: column;
+
+    
+  }
+
+  .eachCoin {
+  border: white 2px solid;
+  display: flex;
+  justify-content: center;
+  }

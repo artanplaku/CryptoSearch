@@ -43,6 +43,8 @@ const filteredCoins = coins.filter(coin =>
 
   return (
     <div className="App">
+      <div className='test'>
+
       <div className='navDiv'>
          <nav className='navBar'>
         <Link to="/">
@@ -51,14 +53,16 @@ const filteredCoins = coins.filter(coin =>
         <Link to="/about">
           <About />
         </Link>
+
       </nav>
       </div>
       <Routes>
-       <Route path="/" element={<Home coins={coins} search={search} handleChange={handleChange} filteredCoins ={filteredCoins}/>}/>
+       <Route path="/" element={<Home  coins={coins} search={search} handleChange={handleChange} filteredCoins ={filteredCoins}/>}/>
       <Route path="/about" element={<About />}/>
       <Route path="/coin/:coinId" element={<Coin />}/>
       </Routes>
       
+      </div>
     </div>
   );
 }
