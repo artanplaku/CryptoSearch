@@ -1,8 +1,7 @@
 import axios from 'axios'
 import './App.css';
-import React, { useState, useEffect, useLocation } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Routes, Route, Link,  } from "react-router-dom"
-import { BrowserRouter as Router } from 'react-router-dom';
 import About from "./About"
 import Home from './Home';
 import Coin from './Coin'
