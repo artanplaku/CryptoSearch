@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import About from "./About"
 import Home from './Home';
 import Coin from './Coin'
+import HeatMapWidget from './HeatMapWidget';
 
 
 
@@ -50,6 +51,9 @@ const filteredCoins = coins.filter(coin =>
         <Link to="/">
           <h1 className="home">Home</h1>
         </Link>
+        <Link to='/heatmap'>
+        <h1 className='heatmap'>Heatmap</h1>
+        </Link>
         <Link to="/about">
           <About />
         </Link>
@@ -60,6 +64,7 @@ const filteredCoins = coins.filter(coin =>
        <Route path="/" element={<Home  coins={coins} search={search} handleChange={handleChange} filteredCoins ={filteredCoins}/>}/>
       <Route path="/about" element={<About />}/>
       <Route path="/coin/:coinId" element={<Coin />}/>
+      <Route path='/heatmap' element={<HeatMapWidget/>}/>
       </Routes>
       
       </div>

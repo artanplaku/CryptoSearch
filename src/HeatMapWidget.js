@@ -5,7 +5,7 @@ const HeatMapWidget = () => {
     return (
         <div className="heatMapWidget">
            
-<coingecko-coin-heatmap-widget  height="800" width='600' locale="en"></coingecko-coin-heatmap-widget>
+<coingecko-coin-heatmap-widget  height="800" width='1890' locale="en"></coingecko-coin-heatmap-widget>
             
 
         </div>
