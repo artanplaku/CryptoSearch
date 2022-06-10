@@ -6,6 +6,7 @@ import About from "./About"
 import Home from './Home';
 import Coin from './Coin'
 import HeatMapWidget from './HeatMapWidget';
+import PriceWidget from './PriceWidget'
 
 
 
@@ -44,6 +45,7 @@ const filteredCoins = coins.filter(coin =>
   return (
     <div className="App">
       <div className='test'>
+      
 
       <div className='navDiv'>
          <nav className='navBar'>
@@ -51,13 +53,15 @@ const filteredCoins = coins.filter(coin =>
           <h1 className="home">Home</h1>
         </Link>
         <Link to='/heatmap'>
-        <h1 className='heatmap'>Heatmap</h1>
+        <h1 className='heatMap'>Heatmap</h1>
         </Link>
         <Link to="/about">
-          <About />
+          <h1 className='About'>About</h1>
+          {/* <About /> */}
         </Link>
-
+        {/* <PriceWidget/> */}
       </nav>
+      <PriceWidget/>
       </div>
       <Routes>
        <Route path="/" element={<Home  coins={coins} search={search} handleChange={handleChange} filteredCoins ={filteredCoins}/>}/>

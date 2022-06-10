@@ -21,6 +21,7 @@
     background-color: rgb(241, 186, 37);
     width: 900px;
     /* position: fixed; */
+    font-size: 18px;
 }
 .heatMapWidget{
     height: 600px;
@@ -30,13 +31,16 @@
 }
 .coinInput{
     height: 45px;
-    width: 380px;
+    width: 650px;
     /* background-image: linear-gradient(
         -225deg,
         #ac32e4 0%,
         #7918f2 48%,
         #4801ff 100%
     ); */
+    margin-top: 20px;
+    font-size: 30px;
+
 }
 .home{
     color: aliceblue;

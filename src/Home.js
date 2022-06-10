@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import Coin from './Coin'
 import './Home.css'
 import HeatMapWidget from './HeatMapWidget';
+import PriceWidget from './PriceWidget'
+
 
 const Home = (props) => {
     // console.log(props)
@@ -25,17 +27,18 @@ const Home = (props) => {
 
         <div className='container'>
             <div className='leftSide'>
-                {/* <HeatMapWidget /> */}
+                
             </div>
             <div className='rightSide'>
                 <div className='coin-search'>
-
+                    
+                
                     <form>
                         <input
                             className='coinInput'
                             type='Search'
                             onChange={props.handleChange}
-                            placeholder='Search here'
+                            placeholder='Search coin here'
                         />
                     </form>
                 </div>
